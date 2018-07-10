@@ -1,0 +1,482 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'arial', sans-serif;
+  line-height: 1.5;
+  }
+
+body {
+  font-size: 16px;
+  color: rgb(74, 74, 74);
+}
+
+
+a {
+  text-decoration: none;
+}
+
+img,
+video {
+  max-width: 100%;
+  }
+
+h2 {
+  font-size: 1.875rem;
+}
+
+h3 {
+  font-size: 1.6875rem;
+}
+
+h4 {
+  font-weight: normal;
+}
+
+.background { background-color: rgb(216, 216, 216); }
+
+/* phone */
+
+.image-mobile {
+  display: none;
+}
+
+ul.mobile-menu {
+  display: none;
+}
+
+.course-mobile {
+  display: none;
+}
+
+.mobile-video {
+  display: none;
+}
+/* header section */
+
+header {
+  display: flex;
+  width: 100%;
+  height: 4rem;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: white;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  height: 2rem;
+  flex-grow: 1;
+  color: black;
+  font-weight: bold;
+  margin: auto 0;
+  align-items: center;
+  margin-left: 1.5rem;
+}
+
+.logo span {
+  color: rgb(216, 216, 216);
+  padding: 0;
+  font-weight: normal;
+}
+
+nav ul {
+  display: flex;
+  margin-right: 1.5rem;
+}
+
+ul li {
+  display: block;
+  padding: 0 0.5rem;
+}
+
+ul li a:link { color: rgb(74, 74, 74); }
+ul li a:visited { color: rgb(74, 74, 74); }
+ul li a:hover { color: rgb(216, 216, 216); }
+
+/* Banner section */
+
+.banner {
+  margin-top: 4rem;
+  display: flex;
+}
+
+.banner-img {
+  width: 60%;
+  margin: 2rem 1.5rem;
+}
+
+.banner-content {
+  width: 40%;
+  margin: auto 0;
+}
+
+.banner-content h1 {
+  font-size: 2.7rem;
+  width: 70%;
+}
+
+.banner-content h4 {
+  width: 50%;
+  margin: 1.5rem 0;
+}
+
+.button {
+  background-color: rgb(74 74 74);
+  width: 50%;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.button a{
+  color: white;
+  text-decoration: none;
+}
+
+.button:hover {
+  letter-spacing: 0.3rem;
+  transition: letter-spacing 2s;
+}
+
+/* Academy section */
+
+.academy {
+  display: flex;
+}
+
+.headline {
+  width: 60%;
+  margin: 2rem 1.5rem;
+}
+
+.headline-content h2 {
+  margin: 2rem 0 1.5rem 0;
+}
+
+.headline-content span {
+  display: block;
+  margin-top: 2rem;
+}
+/* information section */
+
+.information {
+  margin-top: 1rem;
+  width: 40%;
+}
+
+.content {
+  display: flex;
+}
+
+.info-img {
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+}
+
+.info-content {
+  width: 65%;
+  margin: auto 0;
+  line-height: 1.8;
+}
+
+.info-content a:link { color: rgb(74, 144, 226) }
+.info-content a:visited { color: rgb(74, 144, 174) }
+.info-content a:active { color: white; }
+
+.content:hover {
+  background-color: rgb(216, 216, 216);
+  transition: background 1s linear;
+}
+
+/* start learning section */
+
+.title {
+  text-align: center;
+  padding: 2rem;
+}
+
+.courses {
+  display: flex;
+  padding: 0 3.5rem 2rem 3.5rem;
+  justify-content: center;
+}
+
+.course {
+  margin: 1rem;
+  width: 30%;
+  background-color: #ffffff;
+}
+
+.course img {
+  height: auto;
+  width: 100%;
+}
+
+.course h3 {
+  margin: 1rem;
+  font-weight: 600;
+}
+
+.course h4 {
+  margin: 0.5rem 1rem;
+}
+
+.course p {
+  display: block;
+  margin: 0 1rem 1.5rem 1rem;
+  }
+/* Thesis exhibit section */
+
+.exhibit {
+  display: flex;
+}
+
+.exhibit .headline {
+  margin-top: 0;
+}
+
+.exhibit .information {
+  margin-top: 0;
+}
+
+.headline-content h3 {
+  margin: 1.5rem 0 0.5rem 0;
+}
+
+/* footer section */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: 9.375rem;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+footer span {
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+footer a:link { color: rgb(74, 74, 74); }
+footer a:visited { color: rgb(74, 74, 74); }
+footer a:hover { color: rgb(216, 216, 216); }
+
+
+/* Media queries */
+
+@media only screen and (max-width: 770px) {
+
+  /* banner section */
+  .banner {
+    flex-direction: column;
+  }
+
+  .banner-img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .banner-content {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .banner-content h1 {
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  .banner-content h4 {
+    width: 100%;
+  }
+
+  /* courses section */
+  .academy {
+    flex-direction: column;
+  }
+
+  .headline-img {
+    display: none;
+  }
+
+  .headline {
+    width: 100%;
+    background-image: url(../images/information-main.jpg);
+    background-size: cover;
+    margin: 0;
+  }
+
+  .headline-content {
+    width: 100%;
+    margin: 4rem 0;
+    align-items: center;
+    background-color: rgba(255,255,255,0.6);
+    color: rgba(74,74,74,0.8);
+    padding: 1rem 0;
+  }
+
+  .headline-content h2 {
+    margin: 0;
+    padding: 0 1rem;
+  }
+
+  .headline-content p {
+    padding: 0 1rem;
+  }
+
+  .headline-content span {
+    padding: 0 1rem;
+  }
+
+  /* information section */
+
+  .information {
+    width: 100%;
+  }
+  /* academy section */
+  .courses {
+    flex-direction: column;
+    padding-bottom: 1rem;
+  }
+
+  .course {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+
+  .course h3 {
+    margin: 0.5rem 1rem;
+    font-size: 1.5rem;
+  }
+
+  .course h4, .course p {
+    color: rgba(74,74,74,0.8);
+  }
+  .exhibit {
+    display: none;
+  }
+
+  .mobile-video {
+    display: block;
+    margin-bottom: 1.5rem;
+  }
+
+  /* footer section */
+
+  footer {
+    margin: 1rem;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+
+/* header section */
+
+  .desktop-menu, .logo, .desktop, .info-img {
+    display: none;
+  }
+
+  ul.mobile-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+/* banner section */
+
+  .banner, .content {
+    flex-direction: column;
+  }
+
+  .banner-img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .banner-content {
+    width: 100%;
+    margin: 0;
+  }
+
+  .banner-content h1 {
+    font-size: 2rem;
+    margin: 0 1rem;
+    width: 65%;
+  }
+
+  .banner-content h4 {
+    font-weight: 600;
+    margin: 2rem 1rem 1.5rem 1rem;
+    width: 65%;
+  }
+
+  .button {
+    margin: 0 1rem;
+    max-width: 18.75rem;
+  }
+
+/* academy section */
+
+  .information {
+    width: 100%;
+    margin: 0;
+  }
+
+  .image-mobile {
+    display: block;
+    margin: 1rem;
+  }
+
+  .info-content {
+    padding: 0 1rem;
+    margin-left: 1rem;
+    width: 90%;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+/* courses section */
+
+.title {
+  background-color: white;
+}
+
+.course-mobile {
+  display: block;
+  padding-bottom: 2rem;
+}
+
+.course-mobile h3 {
+  margin: 0.5rem 1rem;
+  padding: 1rem;
+  background-color: rgb(216, 216, 216);
+  font-size: 1.25rem;
+}
+
+/* exhibit section */
+
+.mobile-video {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+footer {
+  margin: 1rem;
+  height: auto;
+}
+
+}
